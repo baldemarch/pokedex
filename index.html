@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Pokémon Dashboard</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="center-block">
+      <h1 class="text-center">Pokemon Dashboard</h1>
+      <div id="tools" class="panel panel-default">
+        <div class="panel-body">
+          <div class="col-xs-6">
+            <h4>Filtrar por</h4>
+            <div class="btn-group" role="group">
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <h4>Buscar Pokémon</h4>
+            <input class="form-control" type="text" id="buscarPokemon" name="Buscar" value="" placeholder="Cuál Pokémon buscas?">
+          </div>
+        </div>
+      </div>
+      <ul id="pokemons" class="list-group">
+      </ul>
+    </div>
+  </body>
+  <script src="setupJson.js"></script>
+  <script src="pokeStorage.js"></script>
+  <script src="pokeapp.js"></script>
+  <script src="search.js"></script>
+  <script src="filterPokemons.js"></script>
+</html>
